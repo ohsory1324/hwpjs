@@ -116,11 +116,11 @@ pub fn check_table_page_break(
                 reason: Some(PageBreakReason::TableOverflow),
             }
         } else {
-            // 첫 페이지이지만 테이블이 페이지를 넘어가는 경우, 페이지네이션 발생
-            // Even on first page, if table overflows, pagination occurs
+            // 첫 페이지에 아무 콘텐츠가 없으면 페이지 나누기 하지 않음
+            // If no content on first page, don't break (avoid empty page)
             PaginationResult {
-                has_page_break: true,
-                reason: Some(PageBreakReason::TableOverflow),
+                has_page_break: false,
+                reason: None,
             }
         }
     } else if table_top_mm > context.current_max_vertical_mm
