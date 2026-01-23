@@ -11,6 +11,11 @@ use crate::types::{INT32, UINT32};
 use serde::{Deserialize, Serialize};
 
 /// 타원 개체 / Ellipse shape component
+///
+/// Note: 스펙 문서(표 96)에는 interval 필드가 start_pos2와 end_pos2 사이에 있지만,
+/// 실제 HWP 파일에서는 60바이트만 제공됩니다. 레거시 hwp.js 코드에서도 interval을
+/// 별도로 파싱하지 않습니다. interval은 호(ARC)로 변환될 때만 유효하므로,
+/// 여기서는 interval 필드를 Optional로 처리합니다.
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ShapeComponentEllipse {
     /// 속성 / Attributes (표 97 참조 / See Table 97)
@@ -27,8 +32,6 @@ pub struct ShapeComponentEllipse {
     pub end_pos: Point,
     /// 시작 위치 2 / Start position 2
     pub start_pos2: Point,
-    /// 곡선 간격 (호일 때만 유효) / Interval of curve (effective only when it is an arc)
-    pub interval: INT32,
     /// 끝 위치 2 / End position 2
     pub end_pos2: Point,
 }
@@ -69,22 +72,22 @@ impl ShapeComponentEllipse {
     /// - 그리기 개체 공통 속성(표 81 참조) - 가변 길이
     /// - 타원 개체 속성(표 96 참조) - 60바이트
     ///
-    /// 레거시 코드(hwp.js)는 타원 개체 속성 부분만 파싱하고 있습니다.
+    /// **중요**: 스펙 문서(표 96)에는 interval 필드가 있지만, 실제 HWP 파일과
+    /// 레거시 hwp.js 코드에서는 interval을 별도 필드로 파싱하지 않습니다.
+    /// interval은 호(ARC)로 변환될 때만 유효하며, 타원 개체에서는 60바이트만 사용됩니다.
+    ///
     /// According to spec Table 95, SHAPE_COMPONENT_ELLIPSE has the following structure:
     /// - Object common properties (Table 68) - variable length
     /// - Drawing object common properties (Table 81) - variable length
     /// - Ellipse shape component attributes (Table 96) - 60 bytes
     ///
-    /// Legacy code (hwp.js) only parses the ellipse shape component attributes part.
-    ///
-    /// **테스트 상태 / Testing Status**
-    /// 현재 테스트 파일(`noori.hwp`)에 SHAPE_COMPONENT_ELLIPSE 레코드가 없어 실제 파일로 검증되지 않았습니다.
-    /// 실제 HWP 파일에 SHAPE_COMPONENT_ELLIPSE 레코드가 있으면 자동으로 파싱됩니다.
-    /// Current test file (`noori.hwp`) does not contain SHAPE_COMPONENT_ELLIPSE records, so it has not been verified with actual files.
-    /// If an actual HWP file contains SHAPE_COMPONENT_ELLIPSE records, they will be automatically parsed.
+    /// **Important**: While spec Table 96 lists an interval field, actual HWP files and
+    /// legacy hwp.js code do not parse interval as a separate field. Interval is only
+    /// effective when converted to ARC, and ellipse objects use only 60 bytes.
     pub fn parse(data: &[u8]) -> Result<Self, HwpError> {
-        // 표 96: 타원 개체 속성은 60바이트 / Table 96: Ellipse shape component attributes is 60 bytes
+        // 타원 개체 속성은 60바이트 / Ellipse shape component attributes is 60 bytes
         // UINT32(4) + INT32(4) * 14 = 60 bytes
+        // 레거시 hwp.js와 동일하게 interval 없이 파싱 / Parse without interval, same as legacy hwp.js
         if data.len() < 60 {
             return Err(HwpError::insufficient_data("ShapeComponentEllipse", 60, data.len()));
         }
@@ -195,7 +198,8 @@ impl ShapeComponentEllipse {
         ]);
         offset += 4;
 
-        // 표 96: start pos x2 (INT32, 4바이트) / Table 96: Start position X2 (INT32, 4 bytes)
+        // start_pos2 x, y를 연속으로 읽음 (레거시 hwp.js와 동일)
+        // Read start_pos2 x, y consecutively (same as legacy hwp.js)
         let start_pos2_x = INT32::from_le_bytes([
             data[offset],
             data[offset + 1],
@@ -204,16 +208,6 @@ impl ShapeComponentEllipse {
         ]);
         offset += 4;
 
-        // 표 96: interval of curve (INT32, 4바이트) / Table 96: Interval of curve (INT32, 4 bytes)
-        let interval = INT32::from_le_bytes([
-            data[offset],
-            data[offset + 1],
-            data[offset + 2],
-            data[offset + 3],
-        ]);
-        offset += 4;
-
-        // 표 96: start pos y2 (INT32, 4바이트) / Table 96: Start position Y2 (INT32, 4 bytes)
         let start_pos2_y = INT32::from_le_bytes([
             data[offset],
             data[offset + 1],
@@ -222,8 +216,9 @@ impl ShapeComponentEllipse {
         ]);
         offset += 4;
 
-        // 표 96: end pos x2 (INT32, 4바이트) / Table 96: End position X2 (INT32, 4 bytes)
-        let end_pos_x2 = INT32::from_le_bytes([
+        // end_pos2 x, y를 연속으로 읽음 (레거시 hwp.js와 동일)
+        // Read end_pos2 x, y consecutively (same as legacy hwp.js)
+        let end_pos2_x = INT32::from_le_bytes([
             data[offset],
             data[offset + 1],
             data[offset + 2],
@@ -231,8 +226,7 @@ impl ShapeComponentEllipse {
         ]);
         offset += 4;
 
-        // 표 96: end pos y2 (INT32, 4바이트) / Table 96: End position Y2 (INT32, 4 bytes)
-        let end_pos_y2 = INT32::from_le_bytes([
+        let end_pos2_y = INT32::from_le_bytes([
             data[offset],
             data[offset + 1],
             data[offset + 2],
@@ -269,10 +263,9 @@ impl ShapeComponentEllipse {
                 x: start_pos2_x,
                 y: start_pos2_y,
             },
-            interval,
             end_pos2: Point {
-                x: end_pos_x2,
-                y: end_pos_y2,
+                x: end_pos2_x,
+                y: end_pos2_y,
             },
         })
     }
