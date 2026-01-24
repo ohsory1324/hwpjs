@@ -13,7 +13,7 @@ const __wasi = new __WASI({
 
 // Fetch WASM from GitHub raw URL
 const __wasmUrl =
-  "https://raw.githubusercontent.com/ohsory1324/hwpjs/deno-dist/packages/hwpjs/npm/wasm32-wasi/hwpjs.wasm32-wasi.wasm";
+  "https://raw.githubusercontent.com/ohsory1324/hwpjs/deno-dist/packages/hwpjs/dist/hwpjs.wasm";
 
 const __emnapiContext = __emnapiGetDefaultContext();
 
