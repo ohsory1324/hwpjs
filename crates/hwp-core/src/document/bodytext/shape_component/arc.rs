@@ -75,11 +75,33 @@ impl ShapeComponentArc {
     pub fn parse(data: &[u8]) -> Result<Self, HwpError> {
         // 표 101: 호 개체 속성은 28바이트 / Table 101: Arc shape component attributes is 28 bytes
         // UINT32(4) + INT32(4) * 6 = 28 bytes
-        if data.len() < 28 {
-            return Err(HwpError::insufficient_data("ShapeComponentArc", 28, data.len()));
+        // 일부 HWP 파일에서는 28바이트보다 적은 데이터를 제공할 수 있음 (예: 25바이트)
+        // 레거시 hwp.js는 부족한 바이트를 무시하고 커서를 보정하므로, 여기서도 유연하게 처리
+        // Some HWP files may provide less than 28 bytes (e.g., 25 bytes).
+        // Legacy hwp.js ignores insufficient bytes and adjusts the cursor, so we handle this flexibly.
+        if data.len() < 4 {
+            return Err(HwpError::insufficient_data("ShapeComponentArc", 4, data.len()));
         }
 
         let mut offset = 0;
+
+        /// INT32 값을 안전하게 읽는 헬퍼. 데이터가 부족하면 0을 반환.
+        /// Helper to safely read an INT32 value. Returns 0 if insufficient data.
+        fn read_int32_or_default(data: &[u8], offset: &mut usize) -> INT32 {
+            if *offset + 4 <= data.len() {
+                let val = INT32::from_le_bytes([
+                    data[*offset],
+                    data[*offset + 1],
+                    data[*offset + 2],
+                    data[*offset + 3],
+                ]);
+                *offset += 4;
+                val
+            } else {
+                *offset = data.len();
+                0
+            }
+        }
 
         // 표 101: 속성 (UINT32, 4바이트) / Table 101: Attributes (UINT32, 4 bytes)
         let attr_value = UINT32::from_le_bytes([
@@ -95,58 +117,14 @@ impl ShapeComponentArc {
         let is_arc = (attr_value & 0x02) != 0; // bit 1
         let arc_type = ((attr_value >> 2) & 0xFF) as u8; // bit 2-9
 
-        // 표 101: 타원의 중심 좌표 X 값 (INT32, 4바이트) / Table 101: Ellipse center X coordinate (INT32, 4 bytes)
-        let center_x = INT32::from_le_bytes([
-            data[offset],
-            data[offset + 1],
-            data[offset + 2],
-            data[offset + 3],
-        ]);
-        offset += 4;
-
-        // 표 101: 타원의 중심 좌표 Y 값 (INT32, 4바이트) / Table 101: Ellipse center Y coordinate (INT32, 4 bytes)
-        let center_y = INT32::from_le_bytes([
-            data[offset],
-            data[offset + 1],
-            data[offset + 2],
-            data[offset + 3],
-        ]);
-        offset += 4;
-
-        // 표 101: 제1축 X 좌표 값 (INT32, 4바이트) / Table 101: First axis X coordinate (INT32, 4 bytes)
-        let axis1_x = INT32::from_le_bytes([
-            data[offset],
-            data[offset + 1],
-            data[offset + 2],
-            data[offset + 3],
-        ]);
-        offset += 4;
-
-        // 표 101: 제1축 Y 좌표 값 (INT32, 4바이트) / Table 101: First axis Y coordinate (INT32, 4 bytes)
-        let axis1_y = INT32::from_le_bytes([
-            data[offset],
-            data[offset + 1],
-            data[offset + 2],
-            data[offset + 3],
-        ]);
-        offset += 4;
-
-        // 표 101: 제2축 X 좌표 값 (INT32, 4바이트) / Table 101: Second axis X coordinate (INT32, 4 bytes)
-        let axis2_x = INT32::from_le_bytes([
-            data[offset],
-            data[offset + 1],
-            data[offset + 2],
-            data[offset + 3],
-        ]);
-        offset += 4;
-
-        // 표 101: 제2축 Y 좌표 값 (INT32, 4바이트) / Table 101: Second axis Y coordinate (INT32, 4 bytes)
-        let axis2_y = INT32::from_le_bytes([
-            data[offset],
-            data[offset + 1],
-            data[offset + 2],
-            data[offset + 3],
-        ]);
+        // 나머지 좌표 필드는 데이터가 부족할 수 있으므로 안전하게 읽음
+        // Remaining coordinate fields are read safely as data may be insufficient
+        let center_x = read_int32_or_default(data, &mut offset);
+        let center_y = read_int32_or_default(data, &mut offset);
+        let axis1_x = read_int32_or_default(data, &mut offset);
+        let axis1_y = read_int32_or_default(data, &mut offset);
+        let axis2_x = read_int32_or_default(data, &mut offset);
+        let axis2_y = read_int32_or_default(data, &mut offset);
 
         Ok(ShapeComponentArc {
             attributes: EllipseArcAttributes {
