@@ -311,7 +311,7 @@ fn fill_cell_content(
                             crate::viewer::markdown::document::bodytext::shape_component::convert_shape_component_children_to_markdown(
                                 children,
                                 document,
-                                options.image_output_dir.as_deref(),
+                                options,
                                 tracker,
                             );
                         for shape_part in shape_parts {
@@ -328,10 +328,15 @@ fn fill_cell_content(
             }
         }
 
-        // 마지막 문단이 아니면 문단 사이 공백 추가
-        // If not last paragraph, add space between paragraphs
+        // 마지막 문단이 아니면 문단 경계 구분자 추가 — use_html이면 <br>로 줄 구조 보존
+        // (마크다운 표 셀은 개행 불가; ParaText 내부 PARA_BREAK/LINE_BREAK 처리와 동일 규칙)
+        // If not last paragraph, add separator — <br> when use_html to preserve line structure
         if idx < cell.paragraphs.len() - 1 {
-            cell_parts.push(" ".to_string());
+            if options.use_html == Some(true) {
+                cell_parts.push("<br>".to_string());
+            } else {
+                cell_parts.push(" ".to_string());
+            }
         }
     }
 
@@ -374,6 +379,155 @@ fn fill_cell_content(
                 }
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::convert_table_to_markdown;
+    use crate::document::bodytext::list_header::{
+        LineBreak, ListHeader, ListHeaderAttribute, TextDirection, VerticalAlign,
+    };
+    use crate::document::bodytext::table::{
+        CellAttributes, PageBreakBehavior, Table, TableAttribute, TableAttributes, TableCell,
+        TablePadding,
+    };
+    use crate::document::bodytext::Paragraph;
+    use crate::document::fileheader::FileHeader;
+    use crate::document::{HwpDocument, ParagraphRecord};
+    use crate::viewer::markdown::utils::OutlineNumberTracker;
+    use crate::viewer::markdown::MarkdownOptions;
+
+    fn make_doc() -> HwpDocument {
+        HwpDocument::new(FileHeader {
+            signature: "HWP Document File".to_string(),
+            version: 0x05000300,
+            document_flags: 0,
+            license_flags: 0,
+            encrypt_version: 0,
+            kogl_country: 0,
+            reserved: vec![],
+        })
+    }
+
+    fn text_paragraph(text: &str) -> Paragraph {
+        Paragraph {
+            para_header: Default::default(),
+            records: vec![ParagraphRecord::ParaText {
+                text: text.to_string(),
+                runs: vec![],
+                control_char_positions: vec![],
+                inline_control_params: vec![],
+            }],
+        }
+    }
+
+    fn make_cell(row: u16, col: u16, paragraphs: Vec<Paragraph>) -> TableCell {
+        TableCell {
+            list_header: ListHeader {
+                paragraph_count: paragraphs.len() as i16,
+                attribute: ListHeaderAttribute {
+                    text_direction: TextDirection::Horizontal,
+                    line_break: LineBreak::Normal,
+                    vertical_align: VerticalAlign::Top,
+                },
+            },
+            cell_attributes: CellAttributes {
+                col_address: col,
+                row_address: row,
+                col_span: 1,
+                row_span: 1,
+                width: crate::types::HWPUNIT(1000),
+                height: crate::types::HWPUNIT(1000),
+                left_margin: 0,
+                right_margin: 0,
+                top_margin: 0,
+                bottom_margin: 0,
+                border_fill_id: 0,
+            },
+            paragraphs,
+        }
+    }
+
+    fn make_table(row_count: u16, col_count: u16, cells: Vec<TableCell>) -> Table {
+        Table {
+            attributes: TableAttributes {
+                attribute: TableAttribute {
+                    page_break: PageBreakBehavior::NoBreak,
+                    header_row_repeat: false,
+                },
+                row_count,
+                col_count,
+                cell_spacing: 0,
+                padding: TablePadding {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0,
+                },
+                row_sizes: vec![],
+                border_fill_id: 0,
+                zones: vec![],
+            },
+            cells,
+        }
+    }
+
+    fn options_with_use_html(use_html: Option<bool>) -> MarkdownOptions {
+        MarkdownOptions {
+            image_output_dir: None,
+            use_html,
+            include_version: None,
+            include_page_info: None,
+        }
+    }
+
+    /// 셀 안 문단 경계: use_html=true면 <br>로 보존 (마크다운 표는 셀 내 개행 불가)
+    #[test]
+    fn cell_paragraph_boundary_becomes_br_when_use_html() {
+        let table = make_table(
+            1,
+            1,
+            vec![make_cell(
+                0,
+                0,
+                vec![text_paragraph("첫째 문단"), text_paragraph("둘째 문단")],
+            )],
+        );
+        let doc = make_doc();
+        let mut tracker = OutlineNumberTracker::new();
+        let md = convert_table_to_markdown(
+            &table,
+            &doc,
+            &options_with_use_html(Some(true)),
+            &mut tracker,
+        );
+        assert!(
+            md.contains("| 첫째 문단<br>둘째 문단 |"),
+            "expected <br> between cell paragraphs, got: {md}"
+        );
+    }
+
+    /// use_html 미지정이면 기존 동작(공백 결합) 유지 — 하위 호환
+    #[test]
+    fn cell_paragraph_boundary_stays_space_without_use_html() {
+        let table = make_table(
+            1,
+            1,
+            vec![make_cell(
+                0,
+                0,
+                vec![text_paragraph("첫째 문단"), text_paragraph("둘째 문단")],
+            )],
+        );
+        let doc = make_doc();
+        let mut tracker = OutlineNumberTracker::new();
+        let md =
+            convert_table_to_markdown(&table, &doc, &options_with_use_html(None), &mut tracker);
+        assert!(
+            md.contains("| 첫째 문단 둘째 문단 |"),
+            "expected space join without use_html, got: {md}"
+        );
     }
 }
 

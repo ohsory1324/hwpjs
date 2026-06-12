@@ -12,7 +12,7 @@ use crate::viewer::markdown::document::bodytext::shape_component_picture::conver
 /// # Arguments / 매개변수
 /// * `children` - ShapeComponent의 자식 레코드들 / Child records of ShapeComponent
 /// * `document` - HWP 문서 / HWP document
-/// * `image_output_dir` - 이미지 출력 디렉토리 (선택) / Image output directory (optional)
+/// * `options` - 마크다운 변환 옵션 (use_html 등 부모 컨텍스트 유지) / Markdown options (preserves parent context like use_html)
 /// * `tracker` - 개요 번호 추적기 / Outline number tracker
 ///
 /// # Returns / 반환값
@@ -20,19 +20,13 @@ use crate::viewer::markdown::document::bodytext::shape_component_picture::conver
 pub(crate) fn convert_shape_component_children_to_markdown(
     children: &[ParagraphRecord],
     document: &HwpDocument,
-    image_output_dir: Option<&str>,
+    options: &crate::viewer::markdown::MarkdownOptions,
     tracker: &mut crate::viewer::markdown::utils::OutlineNumberTracker,
 ) -> Vec<String> {
     use crate::viewer::markdown::document::bodytext::paragraph::convert_paragraph_to_markdown;
-    use crate::viewer::markdown::MarkdownOptions;
 
     let mut parts = Vec::new();
-    let options = MarkdownOptions {
-        image_output_dir: image_output_dir.map(|s| s.to_string()),
-        use_html: None,
-        include_version: None,
-        include_page_info: None,
-    };
+    let image_output_dir = options.image_output_dir.as_deref();
 
     // SHAPE_COMPONENT의 children을 재귀적으로 처리 / Recursively process SHAPE_COMPONENT's children
     // SHAPE_COMPONENT_PICTURE는 SHAPE_COMPONENT의 자식으로 올 수 있음
@@ -58,7 +52,7 @@ pub(crate) fn convert_shape_component_children_to_markdown(
                 // SHAPE_COMPONENT 내부의 LIST_HEADER는 글상자 텍스트를 포함할 수 있음
                 // LIST_HEADER inside SHAPE_COMPONENT can contain textbox text
                 for para in paragraphs {
-                    let para_md = convert_paragraph_to_markdown(para, document, &options, tracker);
+                    let para_md = convert_paragraph_to_markdown(para, document, options, tracker);
                     if !para_md.is_empty() {
                         parts.push(para_md);
                     }

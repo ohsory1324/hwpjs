@@ -84,7 +84,7 @@ pub fn convert_paragraph_to_markdown(
                 let shape_parts = convert_shape_component_children_to_markdown(
                     children,
                     document,
-                    options.image_output_dir.as_deref(),
+                    options,
                     tracker,
                 );
                 parts.extend(shape_parts);
