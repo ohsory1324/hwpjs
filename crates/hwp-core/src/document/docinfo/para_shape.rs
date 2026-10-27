@@ -273,10 +273,21 @@ impl ParaShape {
     /// # Returns
     /// 파싱된 ParaShape 구조체 / Parsed ParaShape structure
     pub fn parse(data: &[u8], version: u32) -> Result<Self, HwpError> {
-        // 최소 46바이트 필요 (속성1 4 + 여백/간격 28 + ID 6 + 테두리 간격 8) / Need at least 46 bytes
-        if data.len() < 46 {
-            return Err(HwpError::insufficient_data("ParaShape", 46, data.len()));
+        // 최소 42바이트 필요. 이 파서는 속성1 4 + 여백/간격 28 + ID 6 + 테두리 간격 8 = 46바이트를
+        // 읽지만, HWP 5.0.0.x 문서의 PARA_SHAPE는 42바이트입니다(5.0.1.7부터 속성2 4바이트가 붙어 46).
+        // 모자라는 뒤쪽 테두리 간격은 0으로 둡니다.
+        // Need at least 42 bytes. HWP 5.0.0.x documents store 42-byte PARA_SHAPE records;
+        // trailing border spacing fields that are not present default to 0.
+        if data.len() < 42 {
+            return Err(HwpError::insufficient_data("ParaShape", 42, data.len()));
         }
+        let read_i16_or_zero = |at: usize| -> INT16 {
+            if at + 2 <= data.len() {
+                INT16::from_le_bytes([data[at], data[at + 1]])
+            } else {
+                0
+            }
+        };
 
         let mut offset = 0;
 
@@ -385,19 +396,19 @@ impl ParaShape {
         offset += 2;
 
         // INT16 문단 테두리 간격(왼쪽) / INT16 paragraph border spacing (left)
-        let border_spacing_left = INT16::from_le_bytes([data[offset], data[offset + 1]]);
+        let border_spacing_left = read_i16_or_zero(offset);
         offset += 2;
 
         // INT16 문단 테두리 간격(오른쪽) / INT16 paragraph border spacing (right)
-        let border_spacing_right = INT16::from_le_bytes([data[offset], data[offset + 1]]);
+        let border_spacing_right = read_i16_or_zero(offset);
         offset += 2;
 
         // INT16 문단 테두리 간격(위) / INT16 paragraph border spacing (top)
-        let border_spacing_top = INT16::from_le_bytes([data[offset], data[offset + 1]]);
+        let border_spacing_top = read_i16_or_zero(offset);
         offset += 2;
 
         // INT16 문단 테두리 간격(아래) / INT16 paragraph border spacing (bottom)
-        let border_spacing_bottom = INT16::from_le_bytes([data[offset], data[offset + 1]]);
+        let border_spacing_bottom = read_i16_or_zero(offset);
         offset += 2;
 
         // UINT32 속성2 (표 45, 5.0.1.7 이상) / UINT32 attributes2 (Table 45, 5.0.1.7+)

@@ -242,25 +242,24 @@ fn parse_table_attributes(
     // UINT16 Valid Zone Info Size (5.0.1.0 이상) / UINT16 Valid Zone Info Size (5.0.1.0 and above)
     let mut zones = Vec::new();
     if version >= 5010 {
-        if *offset + 2 > data.len() {
-            return Err(HwpError::insufficient_data(
-                "valid zone info size",
-                2,
-                data.len() - *offset,
-            ));
-        }
-        let valid_zone_info_size = UINT16::from_le_bytes([data[*offset], data[*offset + 1]]);
-        *offset += 2;
+        // 옛 판(5.0.0.x) 표 레코드는 이 필드가 없습니다. `version`은 0xMMnnPPrr 형식이라
+        // 위 조건(5010)은 사실상 항상 참이므로, 바이트가 없으면 영역 정보 없이 넘어갑니다.
+        // Old (5.0.0.x) table records omit this field. Note that `version` is 0xMMnnPPrr, so
+        // the check above is effectively always true; treat a missing field as zero zones.
+        let valid_zone_info_size = if *offset + 2 <= data.len() {
+            let v = UINT16::from_le_bytes([data[*offset], data[*offset + 1]]);
+            *offset += 2;
+            v
+        } else {
+            0
+        };
 
         // BYTE stream 10×zone 영역 속성 (표 78 참조) / BYTE stream 10×zone zone attributes (see Table 78)
         let zone_count = valid_zone_info_size as usize / 10;
         for _ in 0..zone_count {
             if *offset + 10 > data.len() {
-                return Err(HwpError::insufficient_data(
-                    "zone attributes",
-                    10,
-                    data.len() - *offset,
-                ));
+                // 잘린 영역 정보는 읽은 데까지만 씁니다 / Use zones parsed so far if truncated
+                break;
             }
             zones.push(TableZone {
                 start_col: UINT16::from_le_bytes([data[*offset], data[*offset + 1]]),

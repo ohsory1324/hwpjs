@@ -68,7 +68,7 @@ impl Script {
         // WCHAR array[len1] 스크립트 헤더 (2×len1 bytes) / Script header (2×len1 bytes)
         let header = if header_len > 0 {
             let header_bytes_len = header_len.saturating_mul(2);
-            if offset + header_bytes_len <= data.len() {
+            if offset.saturating_add(header_bytes_len) <= data.len() {
                 let header_bytes = &data[offset..offset + header_bytes_len];
                 decode_utf16le(header_bytes).unwrap_or_default()
             } else {
@@ -80,7 +80,7 @@ impl Script {
         offset = offset.saturating_add(header_len.saturating_mul(2));
 
         // DWORD 스크립트 소스 길이 (4 bytes) / Script source length (4 bytes)
-        if offset + 4 > data.len() {
+        if offset.saturating_add(4) > data.len() {
             return Err(HwpError::insufficient_data(
                 "Script source length",
                 4,
@@ -98,7 +98,7 @@ impl Script {
         // WCHAR array[len2] 스크립트 소스 (2×len2 bytes) / Script source (2×len2 bytes)
         let source = if source_len > 0 {
             let source_bytes_len = source_len.saturating_mul(2);
-            if offset + source_bytes_len <= data.len() {
+            if offset.saturating_add(source_bytes_len) <= data.len() {
                 let source_bytes = &data[offset..offset + source_bytes_len];
                 decode_utf16le(source_bytes).unwrap_or_default()
             } else {
@@ -110,7 +110,7 @@ impl Script {
         offset = offset.saturating_add(source_len.saturating_mul(2));
 
         // DWORD 스크립트 Pre 소스 길이 (4 bytes) / Script pre source length (4 bytes)
-        if offset + 4 > data.len() {
+        if offset.saturating_add(4) > data.len() {
             return Err(HwpError::insufficient_data(
                 "Script pre source length",
                 4,
@@ -128,7 +128,7 @@ impl Script {
         // WCHAR array[len3] 스크립트 Pre 소스 (2×len3 bytes) / Script pre source (2×len3 bytes)
         let pre_source = if pre_source_len > 0 {
             let pre_source_bytes_len = pre_source_len.saturating_mul(2);
-            if offset + pre_source_bytes_len <= data.len() {
+            if offset.saturating_add(pre_source_bytes_len) <= data.len() {
                 let pre_source_bytes = &data[offset..offset + pre_source_bytes_len];
                 decode_utf16le(pre_source_bytes).unwrap_or_default()
             } else {
@@ -140,7 +140,7 @@ impl Script {
         offset = offset.saturating_add(pre_source_len.saturating_mul(2));
 
         // DWORD 스크립트 Post 소스 길이 (4 bytes) / Script post source length (4 bytes)
-        if offset + 4 > data.len() {
+        if offset.saturating_add(4) > data.len() {
             return Err(HwpError::insufficient_data(
                 "Script post source length",
                 4,
@@ -158,7 +158,7 @@ impl Script {
         // WCHAR array[len4] 스크립트 Post 소스 (2×len4 bytes) / Script post source (2×len4 bytes)
         let post_source = if post_source_len > 0 {
             let post_source_bytes_len = post_source_len.saturating_mul(2);
-            if offset + post_source_bytes_len <= data.len() {
+            if offset.saturating_add(post_source_bytes_len) <= data.len() {
                 let post_source_bytes = &data[offset..offset + post_source_bytes_len];
                 decode_utf16le(post_source_bytes).unwrap_or_default()
             } else {
@@ -171,7 +171,7 @@ impl Script {
 
         // DWORD 스크립트 end flag (-1) (4 bytes) / Script end flag (-1) (4 bytes)
         // 검증 목적으로 읽지만 사용하지 않음 / Read for validation but not used
-        if offset + 4 <= data.len() {
+        if offset.saturating_add(4) <= data.len() {
             let end_flag = DWORD::from_le_bytes([
                 data[offset],
                 data[offset + 1],

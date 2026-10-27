@@ -127,9 +127,13 @@ impl ShapeComponentPicture {
         let mut offset = 0;
 
         // 그림 개체 속성(표 107) 파싱 시작 / Start parsing picture shape component attributes (Table 107)
-        // 최소 78바이트 필요 (고정 부분) / Need at least 78 bytes (fixed part)
-        if data.len() < 78 {
-            return Err(HwpError::insufficient_data("ShapeComponentPicture", 78, data.len()));
+        // 고정 부분은 스펙상 78바이트지만, 옛 판 문서는 뒤 필드가 없습니다.
+        // 실측: 5.0.0.6 = 73바이트(테두리 투명도·instance ID 없음), 5.0.2.4 = 74바이트(instance ID 없음).
+        // 그림 정보(bindata_id)까지인 73바이트만 요구하고 나머지는 있으면 읽습니다.
+        // The spec fixed part is 78 bytes, but older documents omit trailing fields
+        // (5.0.0.6: 73 bytes, 5.0.2.4: 74 bytes). Require 73 bytes (through bindata_id).
+        if data.len() < 73 {
+            return Err(HwpError::insufficient_data("ShapeComponentPicture", 73, data.len()));
         }
 
         // 표 107: 테두리 색 (COLORREF, 4바이트) / Table 107: Border color (COLORREF, 4 bytes)
@@ -277,17 +281,27 @@ impl ShapeComponentPicture {
         offset += 2;
 
         // 표 107: 테두리 투명도 (BYTE, 1바이트) / Table 107: Border opacity (BYTE, 1 byte)
-        let border_opacity = data[offset];
-        offset += 1;
+        let border_opacity = if offset < data.len() {
+            let v = data[offset];
+            offset += 1;
+            v
+        } else {
+            0
+        };
 
         // 표 107: 문서 내 각 개체에 대한 고유 아이디(instance ID) (UINT32, 4바이트) / Table 107: Instance ID (UINT32, 4 bytes)
-        let instance_id = UINT32::from_le_bytes([
-            data[offset],
-            data[offset + 1],
-            data[offset + 2],
-            data[offset + 3],
-        ]);
-        offset += 4;
+        let instance_id = if offset + 4 <= data.len() {
+            let v = UINT32::from_le_bytes([
+                data[offset],
+                data[offset + 1],
+                data[offset + 2],
+                data[offset + 3],
+            ]);
+            offset += 4;
+            v
+        } else {
+            0
+        };
 
         // 표 107: 그림 효과 정보 (표 108 참조, 가변 길이) / Table 107: Picture effect information (Table 108, variable length)
         let effect_data = if offset < data.len() {

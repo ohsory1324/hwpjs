@@ -339,29 +339,49 @@
         "borders": [
           {
             "line_type": 1,
-            "width": 0,
-            "color": 0
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 1,
-            "width": 0,
-            "color": 257
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
-            "line_type": 0,
+            "line_type": 1,
             "width": 1,
-            "color": 16842752
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
-            "line_type": 0,
+            "line_type": 1,
             "width": 1,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           }
         ],
         "diagonal": {
           "line_type": 1,
           "thickness": 0,
-          "color": 0
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
         },
         "fill": {
           "type": "none"
@@ -383,33 +403,61 @@
           {
             "line_type": 0,
             "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 0,
             "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 0,
             "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 0,
             "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           }
         ],
         "diagonal": {
           "line_type": 1,
           "thickness": 0,
-          "color": 0
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
         },
         "fill": {
           "type": "solid",
-          "background_color": 4294967295,
-          "pattern_color": 4278190080,
+          "background_color": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "pattern_color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
           "pattern_type": -1
         }
       },
@@ -428,120 +476,188 @@
         "borders": [
           {
             "line_type": 1,
-            "width": 0,
-            "color": 0
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 1,
-            "width": 0,
-            "color": 257
-          },
-          {
-            "line_type": 0,
             "width": 1,
-            "color": 100728832
-          },
-          {
-            "line_type": 0,
-            "width": 1,
-            "color": 0
-          }
-        ],
-        "diagonal": {
-          "line_type": 1,
-          "thickness": 0,
-          "color": 0
-        },
-        "fill": {
-          "type": "none"
-        }
-      },
-      {
-        "attributes": {
-          "has_3d_effect": false,
-          "has_shadow": false,
-          "slash_shape": 0,
-          "backslash_shape": 0,
-          "slash_broken_line": 0,
-          "backslash_broken_line": false,
-          "slash_rotated_180": false,
-          "backslash_rotated_180": false,
-          "has_center_line": false
-        },
-        "borders": [
-          {
-            "line_type": 1,
-            "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 1,
-            "width": 0,
-            "color": 258
-          },
-          {
-            "line_type": 0,
             "width": 1,
-            "color": 16843007
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
-          {
-            "line_type": 0,
-            "width": 1,
-            "color": 0
-          }
-        ],
-        "diagonal": {
-          "line_type": 1,
-          "thickness": 0,
-          "color": 0
-        },
-        "fill": {
-          "type": "none"
-        }
-      },
-      {
-        "attributes": {
-          "has_3d_effect": false,
-          "has_shadow": false,
-          "slash_shape": 0,
-          "backslash_shape": 0,
-          "slash_broken_line": 0,
-          "backslash_broken_line": false,
-          "slash_rotated_180": false,
-          "backslash_rotated_180": false,
-          "has_center_line": false
-        },
-        "borders": [
           {
             "line_type": 1,
-            "width": 0,
-            "color": 0
-          },
-          {
-            "line_type": 6,
-            "width": 0,
-            "color": 1537
-          },
-          {
-            "line_type": 0,
-            "width": 1,
-            "color": 100728832
-          },
-          {
-            "line_type": 0,
             "width": 6,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           }
         ],
         "diagonal": {
           "line_type": 1,
           "thickness": 0,
-          "color": 0
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "fill": {
+          "type": "none"
+        }
+      },
+      {
+        "attributes": {
+          "has_3d_effect": false,
+          "has_shadow": false,
+          "slash_shape": 0,
+          "backslash_shape": 0,
+          "slash_broken_line": 0,
+          "backslash_broken_line": false,
+          "slash_rotated_180": false,
+          "backslash_rotated_180": false,
+          "has_center_line": false
+        },
+        "borders": [
+          {
+            "line_type": 1,
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          {
+            "line_type": 1,
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          {
+            "line_type": 2,
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 255
+            }
+          },
+          {
+            "line_type": 1,
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        ],
+        "diagonal": {
+          "line_type": 1,
+          "thickness": 0,
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "fill": {
+          "type": "none"
+        }
+      },
+      {
+        "attributes": {
+          "has_3d_effect": false,
+          "has_shadow": false,
+          "slash_shape": 0,
+          "backslash_shape": 0,
+          "slash_broken_line": 0,
+          "backslash_broken_line": false,
+          "slash_rotated_180": false,
+          "backslash_rotated_180": false,
+          "has_center_line": false
+        },
+        "borders": [
+          {
+            "line_type": 1,
+            "width": 6,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          {
+            "line_type": 1,
+            "width": 6,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          {
+            "line_type": 1,
+            "width": 6,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          {
+            "line_type": 1,
+            "width": 6,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        ],
+        "diagonal": {
+          "line_type": 1,
+          "thickness": 0,
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
         },
         "fill": {
           "type": "solid",
-          "background_color": 16764057,
-          "pattern_color": 16750848,
+          "background_color": {
+            "r": 153,
+            "g": 204,
+            "b": 255
+          },
+          "pattern_color": {
+            "r": 0,
+            "g": 153,
+            "b": 255
+          },
           "pattern_type": 1
         }
       },
@@ -560,29 +676,49 @@
         "borders": [
           {
             "line_type": 1,
-            "width": 0,
-            "color": 0
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 1,
-            "width": 0,
-            "color": 257
-          },
-          {
-            "line_type": 0,
-            "width": 1,
-            "color": 16842752
-          },
-          {
-            "line_type": 0,
             "width": 6,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          {
+            "line_type": 1,
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          {
+            "line_type": 1,
+            "width": 1,
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           }
         ],
         "diagonal": {
           "line_type": 1,
           "thickness": 0,
-          "color": 0
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
         },
         "fill": {
           "type": "gradient",
@@ -664,10 +800,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -737,10 +889,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -810,10 +978,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -883,10 +1067,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -956,10 +1156,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -1029,10 +1245,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -1102,10 +1334,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -1175,10 +1423,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -1248,10 +1512,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -1321,10 +1601,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       }
@@ -2111,7 +2407,12 @@
           {
             "para_header": {
               "text_char_count": 34,
-              "control_mask": 4,
+              "control_mask": {
+                "value": 4,
+                "flags": [
+                  "section_column_definition"
+                ]
+              },
               "para_shape_id": 0,
               "para_style_id": 0,
               "column_divide_type": [
@@ -2127,7 +2428,34 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "한글 2005 예제 파일입니다.\n",
+                "text": "한글 2005 예제 파일입니다.",
+                "runs": [
+                  {
+                    "kind": "control",
+                    "position": 0,
+                    "code": 2,
+                    "name": "RESERVED_2",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 8,
+                    "code": 2,
+                    "name": "RESERVED_2",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "text",
+                    "text": "한글 2005 예제 파일입니다."
+                  },
+                  {
+                    "kind": "control",
+                    "position": 33,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 0,
@@ -2251,7 +2579,11 @@
                       "remark_between_margin": 567,
                       "breakline_type": 27,
                       "breakline_thickness": 1,
-                      "breakline_color": 257
+                      "breakline_color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 0
+                      }
                     }
                   },
                   {
@@ -2274,7 +2606,11 @@
                       "remark_between_margin": 567,
                       "breakline_type": 0,
                       "breakline_thickness": 0,
-                      "breakline_color": 257
+                      "breakline_color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 0
+                      }
                     }
                   },
                   {
@@ -2331,14 +2667,29 @@
                 "type": "ctrl_header",
                 "ctrl_id": "cold",
                 "ctrl_id_value": 1668246628,
-                "data_type": "column_definition"
+                "data_type": "column_definition",
+                "attribute": {
+                  "column_type": "normal",
+                  "column_count": 1,
+                  "column_direction": "left",
+                  "equal_width": true
+                },
+                "column_spacing": 0,
+                "column_widths": [],
+                "attribute_high": 0,
+                "divider_line_type": 0,
+                "divider_line_thickness": 0,
+                "divider_line_color": 0
               }
             ]
           },
           {
             "para_header": {
               "text_char_count": 1,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 0,
               "para_style_id": 0,
               "column_divide_type": [],
@@ -2388,7 +2739,10 @@
           {
             "para_header": {
               "text_char_count": 7,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 11,
               "para_style_id": 10,
               "column_divide_type": [],
@@ -2401,7 +2755,20 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "머리말입니다\n",
+                "text": "머리말입니다",
+                "runs": [
+                  {
+                    "kind": "text",
+                    "text": "머리말입니다"
+                  },
+                  {
+                    "kind": "control",
+                    "position": 6,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 6,
@@ -2449,7 +2816,10 @@
           {
             "para_header": {
               "text_char_count": 1,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 0,
               "para_style_id": 0,
               "column_divide_type": [],
@@ -2499,7 +2869,10 @@
           {
             "para_header": {
               "text_char_count": 112,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 13,
               "para_style_id": 1,
               "column_divide_type": [],
@@ -2512,7 +2885,20 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "본문 내용입니다. 본 문서는 글 워드 프로세서의 파일 저장 형식 중, 글 2002 이후 제품에서 사용되는 글 문서 파일 형식 5.0 및 글 97 문서 파일 형식, HWPML에 관하여 설명한다.\n",
+                "text": "본문 내용입니다. 본 문서는 글 워드 프로세서의 파일 저장 형식 중, 글 2002 이후 제품에서 사용되는 글 문서 파일 형식 5.0 및 글 97 문서 파일 형식, HWPML에 관하여 설명한다.",
+                "runs": [
+                  {
+                    "kind": "text",
+                    "text": "본문 내용입니다. 본 문서는 글 워드 프로세서의 파일 저장 형식 중, 글 2002 이후 제품에서 사용되는 글 문서 파일 형식 5.0 및 글 97 문서 파일 형식, HWPML에 관하여 설명한다."
+                  },
+                  {
+                    "kind": "control",
+                    "position": 111,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 111,
@@ -2608,7 +2994,12 @@
           {
             "para_header": {
               "text_char_count": 20,
-              "control_mask": 2048,
+              "control_mask": {
+                "value": 2048,
+                "flags": [
+                  "gso_table"
+                ]
+              },
               "para_shape_id": 13,
               "para_style_id": 1,
               "column_divide_type": [],
@@ -2621,7 +3012,38 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "표표끝\n",
+                "text": "표표끝",
+                "runs": [
+                  {
+                    "kind": "text",
+                    "text": "표"
+                  },
+                  {
+                    "kind": "control",
+                    "position": 1,
+                    "code": 11,
+                    "name": "SHAPE_OBJECT",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "text",
+                    "text": "표끝"
+                  },
+                  {
+                    "kind": "control",
+                    "position": 11,
+                    "code": 11,
+                    "name": "SHAPE_OBJECT",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 19,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 1,
@@ -2773,384 +3195,8 @@
                 "instance_id": 1453501933,
                 "page_divide": 0,
                 "description": null,
+                "caption": null,
                 "children": [
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 1,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 3,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "A0\n",
-                            "control_char_positions": [
-                              {
-                                "position": 2,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 1,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 3,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "B0\n",
-                            "control_char_positions": [
-                              {
-                                "position": 2,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 1,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 3,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "A1\n",
-                            "control_char_positions": [
-                              {
-                                "position": 2,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 2,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 4,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "B10\n",
-                            "control_char_positions": [
-                              {
-                                "position": 3,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "para_header": {
-                          "text_char_count": 4,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "B11\n",
-                            "control_char_positions": [
-                              {
-                                "position": 3,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 1600,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
                   {
                     "type": "table",
                     "table": {
@@ -3178,11 +3224,11 @@
                       "cells": [
                         {
                           "list_header": {
-                            "paragraph_count": 0,
+                            "paragraph_count": 1,
                             "attribute": {
                               "text_direction": "horizontal",
                               "line_break": "normal",
-                              "vertical_align": "top"
+                              "vertical_align": "center"
                             }
                           },
                           "cell_attributes": {
@@ -3202,7 +3248,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 3,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -3215,7 +3264,20 @@
                               "records": [
                                 {
                                   "type": "para_text",
-                                  "text": "A0\n",
+                                  "text": "A0",
+                                  "runs": [
+                                    {
+                                      "kind": "text",
+                                      "text": "A0"
+                                    },
+                                    {
+                                      "kind": "control",
+                                      "position": 2,
+                                      "code": 13,
+                                      "name": "PARA_BREAK",
+                                      "size_wchars": 1
+                                    }
+                                  ],
                                   "control_char_positions": [
                                     {
                                       "position": 2,
@@ -3264,11 +3326,11 @@
                         },
                         {
                           "list_header": {
-                            "paragraph_count": 0,
+                            "paragraph_count": 1,
                             "attribute": {
                               "text_direction": "horizontal",
-                              "line_break": "normal",
-                              "vertical_align": "top"
+                              "line_break": "maintain_one_line",
+                              "vertical_align": "center"
                             }
                           },
                           "cell_attributes": {
@@ -3288,7 +3350,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 3,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -3301,7 +3366,20 @@
                               "records": [
                                 {
                                   "type": "para_text",
-                                  "text": "B0\n",
+                                  "text": "B0",
+                                  "runs": [
+                                    {
+                                      "kind": "text",
+                                      "text": "B0"
+                                    },
+                                    {
+                                      "kind": "control",
+                                      "position": 2,
+                                      "code": 13,
+                                      "name": "PARA_BREAK",
+                                      "size_wchars": 1
+                                    }
+                                  ],
                                   "control_char_positions": [
                                     {
                                       "position": 2,
@@ -3354,7 +3432,7 @@
                             "attribute": {
                               "text_direction": "horizontal",
                               "line_break": "normal",
-                              "vertical_align": "top"
+                              "vertical_align": "bottom"
                             }
                           },
                           "cell_attributes": {
@@ -3374,7 +3452,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 3,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -3387,7 +3468,20 @@
                               "records": [
                                 {
                                   "type": "para_text",
-                                  "text": "A1\n",
+                                  "text": "A1",
+                                  "runs": [
+                                    {
+                                      "kind": "text",
+                                      "text": "A1"
+                                    },
+                                    {
+                                      "kind": "control",
+                                      "position": 2,
+                                      "code": 13,
+                                      "name": "PARA_BREAK",
+                                      "size_wchars": 1
+                                    }
+                                  ],
                                   "control_char_positions": [
                                     {
                                       "position": 2,
@@ -3436,7 +3530,7 @@
                         },
                         {
                           "list_header": {
-                            "paragraph_count": 1,
+                            "paragraph_count": 2,
                             "attribute": {
                               "text_direction": "horizontal",
                               "line_break": "normal",
@@ -3460,7 +3554,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 4,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -3473,7 +3570,20 @@
                               "records": [
                                 {
                                   "type": "para_text",
-                                  "text": "B10\n",
+                                  "text": "B10",
+                                  "runs": [
+                                    {
+                                      "kind": "text",
+                                      "text": "B10"
+                                    },
+                                    {
+                                      "kind": "control",
+                                      "position": 3,
+                                      "code": 13,
+                                      "name": "PARA_BREAK",
+                                      "size_wchars": 1
+                                    }
+                                  ],
                                   "control_char_positions": [
                                     {
                                       "position": 3,
@@ -3521,7 +3631,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 4,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -3534,7 +3647,20 @@
                               "records": [
                                 {
                                   "type": "para_text",
-                                  "text": "B11\n",
+                                  "text": "B11",
+                                  "runs": [
+                                    {
+                                      "kind": "text",
+                                      "text": "B11"
+                                    },
+                                    {
+                                      "kind": "control",
+                                      "position": 3,
+                                      "code": 13,
+                                      "name": "PARA_BREAK",
+                                      "size_wchars": 1
+                                    }
+                                  ],
                                   "control_char_positions": [
                                     {
                                       "position": 3,
@@ -3584,6 +3710,393 @@
                       ]
                     }
                   }
+                ],
+                "paragraphs": [
+                  {
+                    "para_header": {
+                      "text_char_count": 3,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_text",
+                        "text": "A0",
+                        "runs": [
+                          {
+                            "kind": "text",
+                            "text": "A0"
+                          },
+                          {
+                            "kind": "control",
+                            "position": 2,
+                            "code": 13,
+                            "name": "PARA_BREAK",
+                            "size_wchars": 1
+                          }
+                        ],
+                        "control_char_positions": [
+                          {
+                            "position": 2,
+                            "code": 13,
+                            "name": "PARA_BREAK"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 3,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_text",
+                        "text": "B0",
+                        "runs": [
+                          {
+                            "kind": "text",
+                            "text": "B0"
+                          },
+                          {
+                            "kind": "control",
+                            "position": 2,
+                            "code": 13,
+                            "name": "PARA_BREAK",
+                            "size_wchars": 1
+                          }
+                        ],
+                        "control_char_positions": [
+                          {
+                            "position": 2,
+                            "code": 13,
+                            "name": "PARA_BREAK"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 3,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_text",
+                        "text": "A1",
+                        "runs": [
+                          {
+                            "kind": "text",
+                            "text": "A1"
+                          },
+                          {
+                            "kind": "control",
+                            "position": 2,
+                            "code": 13,
+                            "name": "PARA_BREAK",
+                            "size_wchars": 1
+                          }
+                        ],
+                        "control_char_positions": [
+                          {
+                            "position": 2,
+                            "code": 13,
+                            "name": "PARA_BREAK"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 4,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_text",
+                        "text": "B10",
+                        "runs": [
+                          {
+                            "kind": "text",
+                            "text": "B10"
+                          },
+                          {
+                            "kind": "control",
+                            "position": 3,
+                            "code": 13,
+                            "name": "PARA_BREAK",
+                            "size_wchars": 1
+                          }
+                        ],
+                        "control_char_positions": [
+                          {
+                            "position": 3,
+                            "code": 13,
+                            "name": "PARA_BREAK"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 4,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_text",
+                        "text": "B11",
+                        "runs": [
+                          {
+                            "kind": "text",
+                            "text": "B11"
+                          },
+                          {
+                            "kind": "control",
+                            "position": 3,
+                            "code": 13,
+                            "name": "PARA_BREAK",
+                            "size_wchars": 1
+                          }
+                        ],
+                        "control_char_positions": [
+                          {
+                            "position": 3,
+                            "code": 13,
+                            "name": "PARA_BREAK"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 1600,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -3621,85 +4134,8 @@
                 "instance_id": 1455447557,
                 "page_divide": 0,
                 "description": null,
+                "caption": null,
                 "children": [
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 1,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 7,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "table2\n",
-                            "control_char_positions": [
-                              {
-                                "position": 6,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 500,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 3828,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
                   {
                     "type": "table",
                     "table": {
@@ -3726,11 +4162,11 @@
                       "cells": [
                         {
                           "list_header": {
-                            "paragraph_count": 0,
+                            "paragraph_count": 1,
                             "attribute": {
-                              "text_direction": "horizontal",
+                              "text_direction": "vertical",
                               "line_break": "normal",
-                              "vertical_align": "top"
+                              "vertical_align": "center"
                             }
                           },
                           "cell_attributes": {
@@ -3750,7 +4186,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 7,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -3763,7 +4202,20 @@
                               "records": [
                                 {
                                   "type": "para_text",
-                                  "text": "table2\n",
+                                  "text": "table2",
+                                  "runs": [
+                                    {
+                                      "kind": "text",
+                                      "text": "table2"
+                                    },
+                                    {
+                                      "kind": "control",
+                                      "position": 6,
+                                      "code": 13,
+                                      "name": "PARA_BREAK",
+                                      "size_wchars": 1
+                                    }
+                                  ],
                                   "control_char_positions": [
                                     {
                                       "position": 6,
@@ -3813,6 +4265,85 @@
                       ]
                     }
                   }
+                ],
+                "paragraphs": [
+                  {
+                    "para_header": {
+                      "text_char_count": 7,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_text",
+                        "text": "table2",
+                        "runs": [
+                          {
+                            "kind": "text",
+                            "text": "table2"
+                          },
+                          {
+                            "kind": "control",
+                            "position": 6,
+                            "code": 13,
+                            "name": "PARA_BREAK",
+                            "size_wchars": 1
+                          }
+                        ],
+                        "control_char_positions": [
+                          {
+                            "position": 6,
+                            "code": 13,
+                            "name": "PARA_BREAK"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 500,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 3828,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -3820,7 +4351,12 @@
           {
             "para_header": {
               "text_char_count": 9,
-              "control_mask": 2048,
+              "control_mask": {
+                "value": 2048,
+                "flags": [
+                  "gso_table"
+                ]
+              },
               "para_shape_id": 13,
               "para_style_id": 1,
               "column_divide_type": [],
@@ -3833,7 +4369,23 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "\n",
+                "text": "",
+                "runs": [
+                  {
+                    "kind": "control",
+                    "position": 0,
+                    "code": 11,
+                    "name": "SHAPE_OBJECT",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 8,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 0,
@@ -3916,440 +4468,15 @@
                 "instance_id": 1455447562,
                 "page_divide": 0,
                 "description": null,
+                "caption": {
+                  "align": "bottom",
+                  "include_margin": false,
+                  "width": 8504,
+                  "gap": 850,
+                  "last_width": 40454,
+                  "vertical_align": "top"
+                },
                 "children": [
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 2,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 18,
-                          "control_mask": 262144,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "표  2x2짜리표\n",
-                            "control_char_positions": [
-                              {
-                                "position": 2,
-                                "code": 18,
-                                "name": "AUTO_NUMBER"
-                              },
-                              {
-                                "position": 17,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 40452,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          },
-                          {
-                            "type": "ctrl_header",
-                            "ctrl_id": "atno",
-                            "ctrl_id_value": 1635020399,
-                            "data_type": "other"
-                          }
-                        ]
-                      },
-                      {
-                        "para_header": {
-                          "text_char_count": 4,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "가나다\n",
-                            "control_char_positions": [
-                              {
-                                "position": 3,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 1600,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 40452,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 1,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 3,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_text",
-                            "text": "A0\n",
-                            "control_char_positions": [
-                              {
-                                "position": 2,
-                                "code": 13,
-                                "name": "PARA_BREAK"
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 1,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 1,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 1,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 1,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
-                  {
-                    "type": "list_header",
-                    "header": {
-                      "paragraph_count": 1,
-                      "attribute": {
-                        "text_direction": "horizontal",
-                        "line_break": "normal",
-                        "vertical_align": "top"
-                      }
-                    },
-                    "paragraphs": [
-                      {
-                        "para_header": {
-                          "text_char_count": 1,
-                          "control_mask": 0,
-                          "para_shape_id": 2,
-                          "para_style_id": 0,
-                          "column_divide_type": [],
-                          "char_shape_count": 1,
-                          "range_tag_count": 0,
-                          "line_align_count": 1,
-                          "instance_id": 0,
-                          "section_merge": null
-                        },
-                        "records": [
-                          {
-                            "type": "para_char_shape",
-                            "shapes": [
-                              {
-                                "position": 0,
-                                "shape_id": 1
-                              }
-                            ]
-                          },
-                          {
-                            "type": "para_line_seg",
-                            "segments": [
-                              {
-                                "text_start_position": 0,
-                                "vertical_position": 0,
-                                "line_height": 1000,
-                                "text_height": 1000,
-                                "baseline_distance": 850,
-                                "line_spacing": 600,
-                                "column_start_position": 0,
-                                "segment_width": 19944,
-                                "tag": {
-                                  "is_first_line_of_page": false,
-                                  "is_first_line_of_column": false,
-                                  "is_empty_segment": false,
-                                  "is_first_segment_of_line": true,
-                                  "is_last_segment_of_line": true,
-                                  "has_auto_hyphenation": false,
-                                  "has_indentation": false,
-                                  "has_paragraph_header_shape": false
-                                }
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "type": "other",
-                    "tag_id": 66
-                  },
                   {
                     "type": "table",
                     "table": {
@@ -4377,11 +4504,11 @@
                       "cells": [
                         {
                           "list_header": {
-                            "paragraph_count": 0,
+                            "paragraph_count": 1,
                             "attribute": {
                               "text_direction": "horizontal",
                               "line_break": "normal",
-                              "vertical_align": "top"
+                              "vertical_align": "center"
                             }
                           },
                           "cell_attributes": {
@@ -4401,7 +4528,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 3,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -4414,7 +4544,20 @@
                               "records": [
                                 {
                                   "type": "para_text",
-                                  "text": "A0\n",
+                                  "text": "A0",
+                                  "runs": [
+                                    {
+                                      "kind": "text",
+                                      "text": "A0"
+                                    },
+                                    {
+                                      "kind": "control",
+                                      "position": 2,
+                                      "code": 13,
+                                      "name": "PARA_BREAK",
+                                      "size_wchars": 1
+                                    }
+                                  ],
                                   "control_char_positions": [
                                     {
                                       "position": 2,
@@ -4463,11 +4606,11 @@
                         },
                         {
                           "list_header": {
-                            "paragraph_count": 0,
+                            "paragraph_count": 1,
                             "attribute": {
                               "text_direction": "horizontal",
                               "line_break": "normal",
-                              "vertical_align": "top"
+                              "vertical_align": "center"
                             }
                           },
                           "cell_attributes": {
@@ -4487,7 +4630,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 1,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -4542,7 +4688,7 @@
                             "attribute": {
                               "text_direction": "horizontal",
                               "line_break": "normal",
-                              "vertical_align": "top"
+                              "vertical_align": "center"
                             }
                           },
                           "cell_attributes": {
@@ -4562,7 +4708,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 1,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -4617,7 +4766,7 @@
                             "attribute": {
                               "text_direction": "horizontal",
                               "line_break": "normal",
-                              "vertical_align": "top"
+                              "vertical_align": "center"
                             }
                           },
                           "cell_attributes": {
@@ -4637,7 +4786,10 @@
                             {
                               "para_header": {
                                 "text_char_count": 1,
-                                "control_mask": 0,
+                                "control_mask": {
+                                  "value": 0,
+                                  "flags": []
+                                },
                                 "para_shape_id": 2,
                                 "para_style_id": 0,
                                 "column_divide_type": [],
@@ -4689,6 +4841,404 @@
                       ]
                     }
                   }
+                ],
+                "paragraphs": [
+                  {
+                    "para_header": {
+                      "text_char_count": 18,
+                      "control_mask": {
+                        "value": 262144,
+                        "flags": [
+                          "auto_number"
+                        ]
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_text",
+                        "text": "표  2x2짜리표",
+                        "runs": [
+                          {
+                            "kind": "text",
+                            "text": "표 "
+                          },
+                          {
+                            "kind": "control",
+                            "position": 2,
+                            "code": 18,
+                            "name": "AUTO_NUMBER",
+                            "size_wchars": 8,
+                            "display_text": "1"
+                          },
+                          {
+                            "kind": "text",
+                            "text": " 2x2짜리표"
+                          },
+                          {
+                            "kind": "control",
+                            "position": 17,
+                            "code": 13,
+                            "name": "PARA_BREAK",
+                            "size_wchars": 1
+                          }
+                        ],
+                        "control_char_positions": [
+                          {
+                            "position": 2,
+                            "code": 18,
+                            "name": "AUTO_NUMBER"
+                          },
+                          {
+                            "position": 17,
+                            "code": 13,
+                            "name": "PARA_BREAK"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 40452,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "ctrl_header",
+                        "ctrl_id": "atno",
+                        "ctrl_id_value": 1635020399,
+                        "data_type": "auto_number",
+                        "attribute": 4,
+                        "number": 3,
+                        "user_symbol": "\u0000",
+                        "prefix": "\u0000",
+                        "suffix": "\u0000"
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 4,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_text",
+                        "text": "가나다",
+                        "runs": [
+                          {
+                            "kind": "text",
+                            "text": "가나다"
+                          },
+                          {
+                            "kind": "control",
+                            "position": 3,
+                            "code": 13,
+                            "name": "PARA_BREAK",
+                            "size_wchars": 1
+                          }
+                        ],
+                        "control_char_positions": [
+                          {
+                            "position": 3,
+                            "code": 13,
+                            "name": "PARA_BREAK"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 1600,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 40452,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 1,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 1,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 1,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "para_header": {
+                      "text_char_count": 1,
+                      "control_mask": {
+                        "value": 0,
+                        "flags": []
+                      },
+                      "para_shape_id": 2,
+                      "para_style_id": 0,
+                      "column_divide_type": [],
+                      "char_shape_count": 1,
+                      "range_tag_count": 0,
+                      "line_align_count": 1,
+                      "instance_id": 0,
+                      "section_merge": null
+                    },
+                    "records": [
+                      {
+                        "type": "para_char_shape",
+                        "shapes": [
+                          {
+                            "position": 0,
+                            "shape_id": 1
+                          }
+                        ]
+                      },
+                      {
+                        "type": "para_line_seg",
+                        "segments": [
+                          {
+                            "text_start_position": 0,
+                            "vertical_position": 0,
+                            "line_height": 1000,
+                            "text_height": 1000,
+                            "baseline_distance": 850,
+                            "line_spacing": 600,
+                            "column_start_position": 0,
+                            "segment_width": 19944,
+                            "tag": {
+                              "is_first_line_of_page": false,
+                              "is_first_line_of_column": false,
+                              "is_empty_segment": false,
+                              "is_first_segment_of_line": true,
+                              "is_last_segment_of_line": true,
+                              "has_auto_hyphenation": false,
+                              "has_indentation": false,
+                              "has_paragraph_header_shape": false
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -4696,7 +5246,10 @@
           {
             "para_header": {
               "text_char_count": 6,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 13,
               "para_style_id": 1,
               "column_divide_type": [],
@@ -4709,7 +5262,20 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "다음 문단\n",
+                "text": "다음 문단",
+                "runs": [
+                  {
+                    "kind": "text",
+                    "text": "다음 문단"
+                  },
+                  {
+                    "kind": "control",
+                    "position": 5,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 5,
@@ -4757,7 +5323,10 @@
           {
             "para_header": {
               "text_char_count": 1,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 13,
               "para_style_id": 1,
               "column_divide_type": [],
@@ -4807,7 +5376,10 @@
           {
             "para_header": {
               "text_char_count": 132,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 13,
               "para_style_id": 1,
               "column_divide_type": [],
@@ -4820,7 +5392,20 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "본 문서는 먼저 글 문서 파일 형식 5.0에 관하여 설명한 후, 글 97 문서 파일 형식, HWPML에 관하여 설명한다. 각 형식에 대한 설명은 문서 파일 형식 내의 주요한 자료 형식 및 파일 구조, 레코드 구조에 대해서 설명한다.\n",
+                "text": "본 문서는 먼저 글 문서 파일 형식 5.0에 관하여 설명한 후, 글 97 문서 파일 형식, HWPML에 관하여 설명한다. 각 형식에 대한 설명은 문서 파일 형식 내의 주요한 자료 형식 및 파일 구조, 레코드 구조에 대해서 설명한다.",
+                "runs": [
+                  {
+                    "kind": "text",
+                    "text": "본 문서는 먼저 글 문서 파일 형식 5.0에 관하여 설명한 후, 글 97 문서 파일 형식, HWPML에 관하여 설명한다. 각 형식에 대한 설명은 문서 파일 형식 내의 주요한 자료 형식 및 파일 구조, 레코드 구조에 대해서 설명한다."
+                  },
+                  {
+                    "kind": "control",
+                    "position": 131,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 131,
@@ -4916,7 +5501,12 @@
           {
             "para_header": {
               "text_char_count": 9,
-              "control_mask": 2048,
+              "control_mask": {
+                "value": 2048,
+                "flags": [
+                  "gso_table"
+                ]
+              },
               "para_shape_id": 0,
               "para_style_id": 0,
               "column_divide_type": [],
@@ -4929,7 +5519,23 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "\n",
+                "text": "",
+                "runs": [
+                  {
+                    "kind": "control",
+                    "position": 0,
+                    "code": 11,
+                    "name": "SHAPE_OBJECT",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 8,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 0,
@@ -5012,6 +5618,7 @@
                 "instance_id": 1458668992,
                 "page_divide": 0,
                 "description": null,
+                "caption": null,
                 "children": [
                   {
                     "type": "shape_component",
@@ -5071,7 +5678,53 @@
                           }
                         ]
                       }
-                    }
+                    },
+                    "children": [
+                      {
+                        "type": "shape_component_picture",
+                        "shape_component_picture": {
+                          "border_color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0
+                          },
+                          "border_width": 0,
+                          "border_attributes": 0,
+                          "border_rectangle_x": {
+                            "left": 0,
+                            "top": 0,
+                            "right": 16350,
+                            "bottom": 0
+                          },
+                          "border_rectangle_y": {
+                            "left": 16350,
+                            "top": 9810,
+                            "right": 0,
+                            "bottom": 9810
+                          },
+                          "crop_rectangle": {
+                            "left": 0,
+                            "top": 0,
+                            "right": 37500,
+                            "bottom": 22500
+                          },
+                          "padding": {
+                            "left": 0,
+                            "right": 0,
+                            "top": 0,
+                            "bottom": 0
+                          },
+                          "picture_info": {
+                            "brightness": 0,
+                            "contrast": 0,
+                            "effect": 0,
+                            "bindata_id": 1
+                          },
+                          "border_opacity": 0,
+                          "instance_id": 0
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -5080,7 +5733,10 @@
           {
             "para_header": {
               "text_char_count": 7,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 12,
               "para_style_id": 12,
               "column_divide_type": [],
@@ -5093,7 +5749,20 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "미주입니다.\n",
+                "text": "미주입니다.",
+                "runs": [
+                  {
+                    "kind": "text",
+                    "text": "미주입니다."
+                  },
+                  {
+                    "kind": "control",
+                    "position": 6,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 6,
@@ -5141,7 +5810,10 @@
           {
             "para_header": {
               "text_char_count": 10,
-              "control_mask": 0,
+              "control_mask": {
+                "value": 0,
+                "flags": []
+              },
               "para_shape_id": 14,
               "para_style_id": 11,
               "column_divide_type": [],
@@ -5154,7 +5826,20 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "이건 각주이지요.\n",
+                "text": "이건 각주이지요.",
+                "runs": [
+                  {
+                    "kind": "text",
+                    "text": "이건 각주이지요."
+                  },
+                  {
+                    "kind": "control",
+                    "position": 9,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 9,
@@ -5202,7 +5887,12 @@
           {
             "para_header": {
               "text_char_count": 15,
-              "control_mask": 2048,
+              "control_mask": {
+                "value": 2048,
+                "flags": [
+                  "gso_table"
+                ]
+              },
               "para_shape_id": 0,
               "para_style_id": 0,
               "column_divide_type": [
@@ -5217,7 +5907,27 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "다음 페이지\n",
+                "text": "다음 페이지",
+                "runs": [
+                  {
+                    "kind": "text",
+                    "text": "다음 페이지"
+                  },
+                  {
+                    "kind": "control",
+                    "position": 6,
+                    "code": 11,
+                    "name": "SHAPE_OBJECT",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 14,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 6,
@@ -5300,6 +6010,7 @@
                 "instance_id": 1571560625,
                 "page_divide": 0,
                 "description": null,
+                "caption": null,
                 "children": [
                   {
                     "type": "shape_component",
@@ -5359,7 +6070,53 @@
                           }
                         ]
                       }
-                    }
+                    },
+                    "children": [
+                      {
+                        "type": "shape_component_picture",
+                        "shape_component_picture": {
+                          "border_color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0
+                          },
+                          "border_width": 0,
+                          "border_attributes": 3221225472,
+                          "border_rectangle_x": {
+                            "left": 0,
+                            "top": 0,
+                            "right": 1614,
+                            "bottom": 0
+                          },
+                          "border_rectangle_y": {
+                            "left": 1614,
+                            "top": 1614,
+                            "right": 0,
+                            "bottom": 1614
+                          },
+                          "crop_rectangle": {
+                            "left": 0,
+                            "top": 0,
+                            "right": 1200,
+                            "bottom": 1200
+                          },
+                          "padding": {
+                            "left": 0,
+                            "right": 0,
+                            "top": 0,
+                            "bottom": 0
+                          },
+                          "picture_info": {
+                            "brightness": 0,
+                            "contrast": 0,
+                            "effect": 0,
+                            "bindata_id": 2
+                          },
+                          "border_opacity": 0,
+                          "instance_id": 0
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -5395,5 +6152,20 @@
     },
     "default_script": null
   },
-  "xml_template": null
+  "xml_template": null,
+  "summary_information": {
+    "title": "제목입니다.",
+    "subject": "주제입니다.",
+    "author": "지은이입니다.",
+    "keywords": "키워드입니다.",
+    "comments": "기타입니다.",
+    "last_saved_by": "mete0r",
+    "revision_number": "6, 7, 9, 1053 WIN6",
+    "last_printed": "1970-01-01T00:00:00+09:00",
+    "create_time": "2010-07-02T12:36:13+09:00",
+    "last_saved_time": "2011-06-14T21:54:58+09:00",
+    "page_count": 2,
+    "date_string": "2010년 7월 2일 금요일 오후 12:36:13",
+    "para_count": 26
+  }
 }

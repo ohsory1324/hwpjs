@@ -328,33 +328,61 @@
           {
             "line_type": 0,
             "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 0,
             "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 0,
             "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           },
           {
             "line_type": 0,
             "width": 0,
-            "color": 0
+            "color": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
           }
         ],
         "diagonal": {
           "line_type": 1,
           "thickness": 0,
-          "color": 0
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
         },
         "fill": {
           "type": "solid",
-          "background_color": 4294967295,
-          "pattern_color": 0,
+          "background_color": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "pattern_color": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          },
           "pattern_type": -1
         }
       }
@@ -426,10 +454,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -499,10 +543,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -572,10 +632,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -645,10 +721,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       },
@@ -718,10 +810,26 @@
         },
         "shadow_spacing_x": 10,
         "shadow_spacing_y": 10,
-        "text_color": 0,
-        "underline_color": 0,
-        "shading_color": 4294967295,
-        "shadow_color": 11711154,
+        "text_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "underline_color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "shading_color": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "shadow_color": {
+          "r": 178,
+          "g": 178,
+          "b": 178
+        },
         "border_fill_id": null,
         "strikethrough_color": null
       }
@@ -1394,7 +1502,13 @@
           {
             "para_header": {
               "text_char_count": 25,
-              "control_mask": 2052,
+              "control_mask": {
+                "value": 2052,
+                "flags": [
+                  "section_column_definition",
+                  "gso_table"
+                ]
+              },
               "para_shape_id": 1,
               "para_style_id": 0,
               "column_divide_type": [
@@ -1410,7 +1524,37 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "\n",
+                "text": "",
+                "runs": [
+                  {
+                    "kind": "control",
+                    "position": 0,
+                    "code": 2,
+                    "name": "RESERVED_2",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 8,
+                    "code": 2,
+                    "name": "RESERVED_2",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 16,
+                    "code": 11,
+                    "name": "SHAPE_OBJECT",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 24,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 0,
@@ -1523,7 +1667,11 @@
                       "remark_between_margin": 567,
                       "breakline_type": 27,
                       "breakline_thickness": 1,
-                      "breakline_color": 257
+                      "breakline_color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 0
+                      }
                     }
                   },
                   {
@@ -1546,7 +1694,11 @@
                       "remark_between_margin": 567,
                       "breakline_type": 0,
                       "breakline_thickness": 0,
-                      "breakline_color": 257
+                      "breakline_color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 0
+                      }
                     }
                   },
                   {
@@ -1603,7 +1755,19 @@
                 "type": "ctrl_header",
                 "ctrl_id": "cold",
                 "ctrl_id_value": 1668246628,
-                "data_type": "column_definition"
+                "data_type": "column_definition",
+                "attribute": {
+                  "column_type": "normal",
+                  "column_count": 1,
+                  "column_direction": "left",
+                  "equal_width": true
+                },
+                "column_spacing": 0,
+                "column_widths": [],
+                "attribute_high": 0,
+                "divider_line_type": 0,
+                "divider_line_thickness": 0,
+                "divider_line_color": 0
               },
               {
                 "type": "ctrl_header",
@@ -1640,6 +1804,7 @@
                 "instance_id": 2052024670,
                 "page_divide": 0,
                 "description": null,
+                "caption": null,
                 "children": [
                   {
                     "type": "shape_component",
@@ -1699,7 +1864,53 @@
                           }
                         ]
                       }
-                    }
+                    },
+                    "children": [
+                      {
+                        "type": "shape_component_picture",
+                        "shape_component_picture": {
+                          "border_color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0
+                          },
+                          "border_width": 0,
+                          "border_attributes": 0,
+                          "border_rectangle_x": {
+                            "left": 0,
+                            "top": 0,
+                            "right": 5689,
+                            "bottom": 0
+                          },
+                          "border_rectangle_y": {
+                            "left": 5689,
+                            "top": 3413,
+                            "right": 0,
+                            "bottom": 3413
+                          },
+                          "crop_rectangle": {
+                            "left": 0,
+                            "top": 0,
+                            "right": 37500,
+                            "bottom": 22500
+                          },
+                          "padding": {
+                            "left": 0,
+                            "right": 0,
+                            "top": 0,
+                            "bottom": 0
+                          },
+                          "picture_info": {
+                            "brightness": 0,
+                            "contrast": 0,
+                            "effect": 0,
+                            "bindata_id": 1
+                          },
+                          "border_opacity": 0,
+                          "instance_id": 0
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -1708,7 +1919,12 @@
           {
             "para_header": {
               "text_char_count": 9,
-              "control_mask": 2048,
+              "control_mask": {
+                "value": 2048,
+                "flags": [
+                  "gso_table"
+                ]
+              },
               "para_shape_id": 1,
               "para_style_id": 0,
               "column_divide_type": [
@@ -1723,7 +1939,23 @@
             "records": [
               {
                 "type": "para_text",
-                "text": "\n",
+                "text": "",
+                "runs": [
+                  {
+                    "kind": "control",
+                    "position": 0,
+                    "code": 11,
+                    "name": "SHAPE_OBJECT",
+                    "size_wchars": 8
+                  },
+                  {
+                    "kind": "control",
+                    "position": 8,
+                    "code": 13,
+                    "name": "PARA_BREAK",
+                    "size_wchars": 1
+                  }
+                ],
                 "control_char_positions": [
                   {
                     "position": 0,
@@ -1806,6 +2038,7 @@
                 "instance_id": 2052024671,
                 "page_divide": 0,
                 "description": null,
+                "caption": null,
                 "children": [
                   {
                     "type": "shape_component",
@@ -1865,7 +2098,53 @@
                           }
                         ]
                       }
-                    }
+                    },
+                    "children": [
+                      {
+                        "type": "shape_component_picture",
+                        "shape_component_picture": {
+                          "border_color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0
+                          },
+                          "border_width": 0,
+                          "border_attributes": 0,
+                          "border_rectangle_x": {
+                            "left": 0,
+                            "top": 0,
+                            "right": 5689,
+                            "bottom": 0
+                          },
+                          "border_rectangle_y": {
+                            "left": 5689,
+                            "top": 3413,
+                            "right": 0,
+                            "bottom": 3413
+                          },
+                          "crop_rectangle": {
+                            "left": 0,
+                            "top": 0,
+                            "right": 37500,
+                            "bottom": 22500
+                          },
+                          "padding": {
+                            "left": 0,
+                            "right": 0,
+                            "top": 0,
+                            "bottom": 0
+                          },
+                          "picture_info": {
+                            "brightness": 0,
+                            "contrast": 0,
+                            "effect": 0,
+                            "bindata_id": 1
+                          },
+                          "border_opacity": 0,
+                          "instance_id": 0
+                        }
+                      }
+                    ]
                   }
                 ]
               }
@@ -1897,5 +2176,20 @@
     },
     "default_script": null
   },
-  "xml_template": null
+  "xml_template": null,
+  "summary_information": {
+    "title": "",
+    "subject": "",
+    "author": "mete0r",
+    "keywords": "",
+    "comments": "",
+    "last_saved_by": "mete0r",
+    "revision_number": "6, 7, 9, 1053 WIN6",
+    "last_printed": "1970-01-01T00:00:00+09:00",
+    "create_time": "2012-05-29T17:18:16+09:00",
+    "last_saved_time": "2012-05-29T17:28:39+09:00",
+    "page_count": 0,
+    "date_string": "2012년 5월 29일 화요일 오후 5:18:16",
+    "para_count": 0
+  }
 }

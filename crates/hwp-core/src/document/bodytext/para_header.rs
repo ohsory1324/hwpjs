@@ -405,10 +405,13 @@ impl ParaHeader {
     /// # Returns
     /// 파싱된 ParaHeader 구조체 / Parsed ParaHeader structure
     pub fn parse(data: &[u8], version: u32) -> Result<Self, HwpError> {
-        // 최소 22바이트 필요 (5.0.3.2 이상은 24바이트) / Need at least 22 bytes (24 bytes for 5.0.3.2 and above)
-        let min_size = if version >= 0x05000302 { 24 } else { 22 };
-        if data.len() < min_size {
-            return Err(HwpError::insufficient_data("ParaHeader", min_size, data.len()));
+        // 최소 22바이트 필요. 스펙상 5.0.3.2 이상은 24바이트지만, 실제 5.0.3.3 문서 중
+        // 22바이트 PARA_HEADER를 쓰는 파일이 있으므로(성북구의회 부록 등) 판 번호로 강제하지 않고
+        // 레코드 길이가 24 이상일 때만 section_merge를 읽습니다.
+        // Need at least 22 bytes. The spec says 24 bytes for 5.0.3.2+, but real 5.0.3.3 files
+        // with 22-byte PARA_HEADER records exist, so section_merge is read only when present.
+        if data.len() < 22 {
+            return Err(HwpError::insufficient_data("ParaHeader", 22, data.len()));
         }
 
         let mut offset = 0;
